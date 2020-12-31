@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Holidays</title>
+  <meta name="description" content="The Holidays">
+  <meta name="author" content="DeepaPrasanna">
+
+  <!--semantic ui cdn-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="">
+
+</head>
+
+<body>
+    <!--header-->
+    <div class="ui sizer vertical segment">
+        <h1 class="ui center aligned violet header">Check out the holidays!</h1>
+        <p>Enter the country name and month no to find out</p>
+
+    </div>
+    <!--Form-->
+    <div class="ui two column centered grid" style="padding-top:10px">
+  <div class="column">
+    <form class="ui form" id="user-form">
+
+            <div class="three fields">
+                <div class="four wide field">
+                    <input type="text" id = "country-name" name="country-name" placeholder="Enter a country">
+                </div>
+                <div class="field">
+                    <select class="ui fluid search dropdown" id = "month-name"name="month-name">
+                        <option value="">Month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <input type="text" id = "year" name="year" maxlength="4" placeholder="Year">
+                </div>
+                <button class="ui primary button" id="save-button">
+                    Save
+                </button>
+            </div>
+    </form>
+    </div>
+    </div>
+    <!--Render holiday data-->
+    <div class="ui two column centered grid">
+  <div class="column" id="holiday-table">
+<!--    <table class="ui violet table ">-->
+<!--        <thead>-->
+<!--            <tr><th class = "two wide">Name</th>-->
+<!--            <th class = "two wide">Day</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--    <tr>-->
+<!--      <td>Apples</td>-->
+<!--      <td>200</td>-->
+
+<!--    </tr>-->
+<!--    <tr>-->
+<!--      <td>Orange</td>-->
+<!--      <td>310</td>-->
+
+<!--    </tr>-->
+<!--  </tbody>-->
+<!--</table>-->
+  </div>
+  </div>
+
+    <script src="main.js"></script>
+    </body>
+</html>
